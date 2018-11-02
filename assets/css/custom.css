@@ -21,7 +21,7 @@ pre.highlight>code {
     background-color: none;
 }
 
-<style>
+
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
@@ -43,4 +43,4 @@ pre.highlight>code {
 ::-webkit-scrollbar-thumb:hover {
     background: #04f92d; 
 }
-</style>
+
