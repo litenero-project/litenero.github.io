@@ -1,4 +1,4 @@
-# Official Electronero Website
+# Official Electronero Pulse Website
 
 ### Clone the repo
 ```
