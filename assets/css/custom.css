@@ -35,12 +35,12 @@ pre.highlight>code {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: green; 
+    background: grey; 
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #04f92d; 
+    background: #f3f704; 
 }
 
