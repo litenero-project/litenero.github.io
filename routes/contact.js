@@ -23,6 +23,17 @@ router.post('/contact/subscribe', function (req, res) {
         text: 'The following subscriber has requested contact and/or reply from the Electronero team', // text body
         html: '<p>Electronero Form Submission:</p><ul><li>' +req.body.email+ '</li>' + '</ul>'
     }
+    
+   let formSubmittedEmail = req.body.email;
+   if(formSubmittedEmail == undefined ){
+      return;
+      }
+   if(formSubmittedEmail == null){
+      return;
+      }
+   if(formSubmittedEmail == ""){
+      return;
+      }
     transporter.sendMail(mailOption, function (error, info) {
         console.log(info);
         if (error) {
@@ -50,6 +61,15 @@ router.post('/contact/send', function (req, res) {
     let formSubmittedEmail = req.body.email;
     let formSubmittedName = req.body.name;
     let formSubmittedMessage = req.body.message;
+   if(formSubmittedEmail == undefined || formSubmittedName == undefined || formSubmittedMessage == undefined){
+      return;
+      }
+   if(formSubmittedEmail == null || formSubmittedName == null || formSubmittedMessage == null){
+      return;
+      }
+   if(formSubmittedEmail == "" || formSubmittedName == "" || formSubmittedMessage == ""){
+      return;
+      }
     let sendFormToStaff = 'etxsub.ou4jbg@zapiermail.com, electronero.official@gmail.com, electronerodev@gmail.com';
 
     var mailOption = {
